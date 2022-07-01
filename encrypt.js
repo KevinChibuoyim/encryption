@@ -1,6 +1,6 @@
-var encrypted = CryptoJS.AES.encrypt("Message", "Secret Passphrase");
+var encrypted = CryptoJS.AES.encrypt("Info", "Private Passphrase");
 
-var decrypted = CryptoJS.AES.decrypt(encrypted, "Secret Passphrase");
+var decrypted = CryptoJS.AES.decrypt(encrypted, "Private Passphrase");
 
 
 document.getElementById("demo1").innerHTML = encrypted;
